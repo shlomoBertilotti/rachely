@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #6A5F54;
+  background-color: white;
+  line-height: 1.6;
+}
+
+/* Header and nav */
+header {
+  background-color: #CA7165;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #6A5F54;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Section styles */
+section {
+  padding: 30px 20px;
+}
+
+.one {
+  background-color: #F9EDE3;
+  text-align: center;
+}
+
+.one img {
+  max-width: 100%;
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.gallery img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Section Two - Form */
+.two {
+  background-color: #F9EDE3;
+  text-align: center;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-button {
+  background-color: #CA7165;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #b65c52;
+}
+
+/* Section Three - Contact Info */
+.three {
+  background-color: #6A5F54;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.three a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .one img {
+    width: 90%;
+  }
+}
